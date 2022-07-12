@@ -1,0 +1,48 @@
+/* Status Bar */
+
+.status-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+
+    position: fixed;
+
+    padding: 0.5rem 1rem;
+ 
+}
+
+.status-bar__column--left {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.status-bar__column--middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-bar__column--right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar__column--left__text {
+    padding-left: 1rem;
+    padding-right: 0.5em;
+}
+
+.status-bar__column--middle__time {
+   padding-right: 0.5em; 
+}
+
+.status-bar__column--right__battery-icon,
+.status-bar__column--right__bolt-icon {
+   padding-left: 0.4em;
+}
+.status-bar__column--right__bolt-icon {
+    padding-right: 1rem;
+}
