@@ -1,17 +1,15 @@
-/* Status Bar */
-
 .status-bar {
     width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
 
-
-
-    position: fixed;
-
     padding: 0.5rem 0.2rem;
     background: rgba(154, 208, 246, 0.876);
- 
+    background: rgba(11, 96, 152, 0.876);
+    color: white;
+    font-family: var(--inter);
+    font-size: 0.9rem;
 }
 
 .status-bar__column--left {
@@ -31,18 +29,20 @@
     align-items: center;
 }
 
+/* .status-bar__column--left element */
 .status-bar__column--left__text {
     padding-left: 1rem;
-    padding-right: 0.5em;
+    padding-right: 1rem;
 }
-
+/* .status-bar__column--middle element */
 .status-bar__column--middle__time {
    padding-right: 0.5em; 
+   letter-spacing: 0.06rem;
 }
-
+/* .status-bar__column--right elements */
 .status-bar__column--right__battery-icon,
 .status-bar__column--right__bolt-icon {
-   padding-left: 0.4em;
+   padding-left: 0.8em;
 }
 .status-bar__column--right__bolt-icon {
     padding-right: 1rem;

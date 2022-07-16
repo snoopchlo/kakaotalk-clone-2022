@@ -1,5 +1,8 @@
 :root {
     --section-padding: 2rem;
+
+    --inter: 'Inter', sans-serif;
+    --nunito: 'Nunito', sans-serif;
 }
 
 .badge {

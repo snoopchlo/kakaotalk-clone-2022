@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,500;0,600;1,700&display=swap');
+
+/* Reset */
 @import "../css/reset.css";
 
 /* Variables */
@@ -5,7 +9,7 @@
 /* Components */
 @import "../css/components/status-bar.css";
 @import "../css/components/nav-bar.css";
-@import "../css/components/screen-header.css";
+@import "../css/components/main-header.css";
 @import "../css/components/user-component.css";
 
 /* Screens */
@@ -32,6 +36,8 @@ body {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll; 
+
+ 
 }
 
 body::-webkit-scrollbar {

@@ -1,4 +1,4 @@
-.screen-header {
+.main-header {
     width: 100%;
     padding: 4rem var(--section-padding);
 
@@ -11,24 +11,24 @@
     align-items: center;
     background: rgba(154, 208, 246, 0.567);
 }
-.screen-header--wide {
+.main-header--wide {
     grid-template-columns: 1fr 1fr 0.6fr 1.4fr;
     padding: 4rem 2rem var(--section-padding);
    
 }
-.screen-header--narrow {
+.main-header--narrow {
     grid-template-columns: 1fr 1fr 1.4fr 0.5fr;
     padding: 4rem 2rem var(--section-padding);
 }
 
-.screen-header__icons {
+.main-header__icons {
     grid-column: 4/5;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.screen-header--narrow .screen-header__icons li {
+.main-header--narrow .main-header__icons li {
     position: relative;
 }
 
@@ -42,7 +42,7 @@
 }
 
 
-.screen-header__title {
+.main-header__title {
     grid-column: 1/2;
     font-size: 2rem;
     font-weight: 600;
