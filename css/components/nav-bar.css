@@ -1,0 +1,52 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(224, 227, 229, 0.381);
+    border-top: 1px solid rgba(206, 206, 206, 0.3);
+    
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  2.5rem 5.5rem;
+}
+
+.nav__link {
+    color: #2e363e;
+    position: relative;
+}
+
+.nav__notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+
+    width: 2.1rem;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+    background-color: tomato;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav__dot {
+    display: block;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+
+    width: 9px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: tomato;
+
+}

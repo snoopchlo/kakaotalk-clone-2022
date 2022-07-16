@@ -2,17 +2,23 @@
 
 /* Components */
 @import "../css/components/status-bar.css";
+@import "../css/components/nav-bar.css";
+@import "../css/components/screen-header.css";
+@import "../css/components/user-component.css";
 
 /* Screens */
 @import "../css/screens/login.css";
 
+* {
+    box-sizing: border-box!important;
+}
 a {
     text-decoration: none;
 }
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 1000vh;
 
     display: flex;
     flex-direction: column;

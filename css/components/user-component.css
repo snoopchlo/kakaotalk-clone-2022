@@ -1,0 +1,34 @@
+.user-component {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+    padding: 0 2rem;
+
+    /* justify-items: center; */
+    align-items: center;
+}
+
+.user-component__avatar {
+    grid-column: 1/2;
+    width: 7rem;
+    aspect-ratio: 1/1;
+    background: aqua;
+    border-radius: 1rem;
+}
+
+.user-component__text {
+    grid-column: 2/3;
+    font-size: 2.3rem;
+}
+
+
+
+.user-component__blank {
+    grid-column: 3/4;
+}
+
+.user-component__notification {
+    grid-column: 4/5;
+}
+
