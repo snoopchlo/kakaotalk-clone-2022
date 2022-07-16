@@ -1,3 +1,10 @@
+.more-main-container {
+    margin-bottom: 5rem;
+}
+
+.more__user-component__avatar {
+    margin-right: 1.3rem;
+}
 .more__user-component {
     margin-bottom: 4rem;
 }
