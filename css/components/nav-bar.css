@@ -4,7 +4,7 @@
     bottom: 0;
     background-color: rgba(224, 227, 229, 0.381);
     border-top: 1px solid rgba(206, 206, 206, 0.3);
-    padding: 3rem var(--section-padding);
+    padding: 2rem var(--section-padding);
     background: rgb(237,231,190);
 /* background: radial-gradient(circle, rgba(237,231,190,1) 0%, rgba(200,218,234,1) 28%, rgba(245,219,228,1) 51%, rgba(230,181,203,1) 74%, rgba(204,181,244,1) 100%);
 background-image: linear-gradient(
@@ -24,7 +24,7 @@ background-image: linear-gradient(
   hsl(262deg 74% 83%) 100%
 ); */
 background: rgba(154, 208, 246, 0.567);
-
+background: var(--light-blue);
 }
 
 .nav__list {

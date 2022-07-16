@@ -1,25 +1,27 @@
 .main-header {
+    position: fixed;
     width: 100%;
-    padding: 3rem var(--section-padding);
+    padding: 3.8rem 2rem var(--section-padding);
 
     display: grid;
     /* 4 icons on the right */
     grid-template-columns: repeat(4, 1fr);
-
-    /* justify-items: center; */
     align-items: center;
-    background: rgba(154, 208, 246, 0.567);
+    background: var(--light-blue);
+    font-family: var(--nunito);
+    font-weight: 800;
+    letter-spacing: 0.15rem;
+    
 }
 /* 3 icons on the right */
 .main-header--narrow {
-    grid-template-columns: 1fr 1fr 1fr 0.5fr;
-    padding: 4rem 2rem var(--section-padding);
+    grid-template-columns: 1fr 1fr 1fr 0.7fr;
 }
 /* Title on the left */
 .main-header__title {
     grid-column: 1/2;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 /* Icons on the right */
 .main-header__icons {

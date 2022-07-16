@@ -10,7 +10,7 @@
         <title>Welcome to AdventureTalk</title>
     </head>
     <body>
-        <!-- Status-bar -->
+        <!------- Status-bar ------->
         <section class="status-bar z900">
             <div class="status-bar__column--left">
                 <span class="status-bar__column--left__text">No Service</span>
@@ -25,86 +25,269 @@
                 <span class="status-bar__column--right__bolt-icon"><i class="fa-solid fa-bolt fa-xs"></i></span>
             </div>
         </section>
-
-    
-        <header class="main-header">
+        <!------- Header ------->
+        <header class="friends-main-header main-header z800">
             <h1 class="main-header__title">Friends</h1>
             <ul class="main-header__icons">
                 <li>
-                    <i class="fa-regular fa-magnifying-glass fa-lg"></i>
+                    <a href="find.html">
+                        <i class="fa-regular fa-magnifying-glass fa-lg"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-regular fa-user-plus fa-lg"></i>
+                    <a href="find.html">
+                        <i class="fa-regular fa-user-plus fa-lg"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-regular fa-music fa-lg"></i>
+                    <a href="music.html">
+                        <i class="fa-regular fa-music fa-lg"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fa-regular fa-gear fa-lg"></i>
+                    <a href="settings.html">
+                        <i class="fa-regular fa-gear fa-lg"></i>
+                    </a>
                 </li>
-            </ul>
-       
+            </ul> 
         </header>
-
-        <section class="screen-border-bottom user-component">
-            <div class="user-component__avatar user-component__avatar--xl"></div>
-            <div class="user-component__text">
-                <h2 class="user-component__text__title">Chloe</h2>
-                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+        <!------- Main contents ------->
+        <secion class="friends-main-container main-container">
+            <!-- User profile -->
+            <header class="user-component main-border-bottom">
+                <div class="user-component__avatar user-component__avatar--xl"></div>
+                <div class="user-component__text">
+                    <h2 class="user-component__text__title">Chloe</h2>
+                    <h6 class="user-component__text__sub-title">text etxt etextete</h6>
+                </div>
+            </header>
+            <!-- Channel -->
+            <div class="friends-screen__channel main-border-bottom">
+                <div class="friends-screen__channel-header">
+                    <span>Channel</span>
+                    <i class="fa-regular fa-chevron-up"></i>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__avatar user-component__avatar--sm"></div>
+                    <div class="user-component__text user-component__text--small">
+                        <h2 class="user-component__text__title--small">Channel</h2>
+                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                    </div>
+                    <div class="user-component__icon">
+                        <span>2</span>
+                        <i class="fa-regular fa-chevron-right"></i>
+                    </div>
+        
+                </div>
             </div>
-            <div class="user-component__notification"></div>
-   
-        </section>
-        <section class="screen-border-bottom friends-screen__channel">
+            <!-- Friends list -->
             <div class="friends-screen__channel-header">
-                <span>Channel</span>
+                <span>Friends</span>
                 <i class="fa-regular fa-chevron-up"></i>
             </div>
-            <div class="user-component">
-                <div class="user-component__avatar user-component__avatar--sm"></div>
-                <div class="user-component__text user-component__text--small">
-                    <h2 class="user-component__text__title--small">Channel</h2>
-                    <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                </div>
-                <div class="user-component__icon">
-                    <span>2</span>
-                    <i class="fa-regular fa-chevron-right"></i>
-                </div>
-       
-            </div>
-        </section>
-
-
-
-        <nav class="nav">
-           <ul class="nav__list">
-              <li class="nav__btn nav__btn1">
-                <a class="nav__link" href="friends.html">
-                    
-                    <i class="fa-solid fa-user-large fa-2x"></i>
-                </a>
-              </li>
-              <li class="nav__btn nav__btn2">
-                <a class="nav__link nav__link__chat" href="chats.html">
-                    <span class="nav__notification badge">1</span>
-                    <i class="fa-regular fa-comment fa-2x"></i>
-                </a>
-              </li>
-              <li class="nav__btn nav__btn3">
-                <a class="nav__link" href="find.html">
-                    <i class="fa-regular fa-magnifying-glass fa-2x"></i>
-                </a>
-              </li>
-              <li class="nav__btn nav__btn4">
-                <a class="nav__link" href="more.html">
-                    <span class="badge__dot"></span>
-                    <i class="fa-regular fa-ellipsis-stroke fa-2x"></i>
-                </a>
-              </li>
-           </ul>
-        </nav>
+            <ul class="friends-list">
+                <!-- Friend 1 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 2 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 3 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 4 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 5 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 6 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 7 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 8 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 9 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+                <!-- Friend 10 -->
+                <li class="friends-list__friend">
+                    <a href="#">
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text user-component__text--small">
+                                <h2 class="user-component__text__title--small">Channel</h2>
+                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                            </div>
+                            <div class="user-component__icon">
+                                <span>2</span>
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </div>
+                
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </secion>
+            <!------- Navbar at the bottom ------->
+            <nav class="nav z900">
+                <ul class="nav__list">
+                    <li class="nav__btn nav__btn1">
+                        <a class="nav__link" href="friends.html">
+                            <i class="fa-solid fa-user-large fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="nav__btn nav__btn2">
+                        <a class="nav__link nav__link__chat" href="chats.html">
+                            <span class="nav__notification badge">1</span>
+                            <i class="fa-regular fa-comment fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="nav__btn nav__btn3">
+                        <a class="nav__link" href="find.html">
+                            <i class="fa-regular fa-magnifying-glass fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="nav__btn nav__btn4">
+                        <a class="nav__link" href="more.html">
+                            <span class="badge__dot"></span>
+                            <i class="fa-regular fa-ellipsis-stroke fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+  
         
+        <!-- Fontawesome icons -->
         <script src="https://kit.fontawesome.com/fc3b13091a.js" crossorigin="anonymous"></script>
-        <script src="" async defer></script>
     </body>
 </html>
