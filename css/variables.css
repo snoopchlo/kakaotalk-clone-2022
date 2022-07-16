@@ -4,7 +4,7 @@
     --inter: 'Inter', sans-serif;
     --nunito: 'Nunito', sans-serif;
 }
-
+/* Notification */
 .badge {
     display: flex;
     justify-content: center;
@@ -17,6 +17,7 @@
     font-weight: 600;
 }
 
+/* Regular dot on one of the icon */
 .badge__dot {
     display: block;
     position: absolute;
@@ -27,15 +28,27 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: tomato;
-
 }
 
+/* Small dot on one of the icon */
+.badge__dot--sm {
+    position: absolute;
+    left: 23px;
+    bottom: 23px;
+
+    width: 7px;
+    aspect-ratio: 1/1;
+}
+
+/* Main containers padding for sides fo the screen */
 .main {
     width: 100%;
     padding: 0 var(--section-padding);
 }
 
+/* Light grey line below main sections */
 .main-border-bottom {
     border-bottom: 1px solid rgb(222, 221, 221);
     margin-bottom: 1rem;
 }
+
