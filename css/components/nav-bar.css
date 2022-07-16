@@ -4,14 +4,19 @@
     bottom: 0;
     background-color: rgba(224, 227, 229, 0.381);
     border-top: 1px solid rgba(206, 206, 206, 0.3);
-    
+    padding: 3rem var(--section-padding);
 }
 
 .nav__list {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
-    padding:  2.5rem 5.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  
+  
+
+    justify-items: center;
+    align-items: center;
 }
 
 .nav__link {
@@ -31,22 +36,22 @@
     width: 2.1rem;
     aspect-ratio: 1/1;
 
-    border-radius: 50%;
-    background-color: tomato;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
+    
 }
 
-.nav__dot {
-    display: block;
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
 
-    width: 9px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: tomato;
 
+.nav-btn1 {
+    grid-column: 1/2;
+}
+.nav-btn2 {
+    grid-column: 2/3;
+}
+
+.nav-btn3 {
+    grid-column: 3/4;
+}
+
+.nav-btn4 {
+    grid-column: 4/5;
 }

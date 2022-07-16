@@ -1,0 +1,45 @@
+/* --- Find Screen --- */
+
+.find-icons {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.find-icons__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-icons__icon i {
+    margin-bottom: 1.2rem;
+}
+.recommended-friends-header__title,
+.open-chat-header__title {
+    line-height: 3rem;
+    color: rgb(124, 120, 120);
+}
+
+.open-chat__chat {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    width: 100%;
+    align-items: center;
+
+}
+
+.open-chat__chat__text {
+    grid-column: 1/2;
+    line-height: 2rem;
+}
+
+.open-chat__chat__avatar {
+    grid-column: 2/3;
+}
+

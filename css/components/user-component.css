@@ -1,34 +1,106 @@
 .user-component {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto 2fr 1fr;
   
-    padding: 0 2rem;
+  
+    padding: 1.2rem var(--section-padding);
 
     /* justify-items: center; */
     align-items: center;
+
 }
 
 .user-component__avatar {
     grid-column: 1/2;
-    width: 7rem;
-    aspect-ratio: 1/1;
     background: aqua;
     border-radius: 1rem;
+    margin-right: 1rem;
 }
 
+.user-component__avatar--xl {
+    width: 6rem;
+    aspect-ratio: 1/1;
+}
+.user-component__avatar--sm {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 1.2rem;
+}
+
+.user-component__avatar--md {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+}
 .user-component__text {
     grid-column: 2/3;
-    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.1rem;
 }
 
-
-
-.user-component__blank {
-    grid-column: 3/4;
+.user-component__text__title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.user-component__text__title--small {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.user-component__text__sub-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: grey;
 }
 
 .user-component__notification {
     grid-column: 4/5;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+}
+.user-component__notification-time {
+    color: rgb(156, 152, 152);
+}
+.user-component__notification-count {
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    margin-top: 0.5rem;
+}
+
+.friends-screen__channel {
+    width: 100%;
+
+}
+
+.friends-screen__channel-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem var(--section-padding);
+}
+
+.user-component__avatar--sm {
+    grid-column: 1/2;
+}
+
+.user-component__text--small {
+    grid-column: 2/3;
+}
+
+.user-component__icon {
+    grid-column: 3/4; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-component__icon i{
+    margin-left: 1rem;
 }
 

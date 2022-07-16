@@ -1,5 +1,7 @@
 @import "../css/reset.css";
 
+/* Variables */
+@import "../css/variables.css";
 /* Components */
 @import "../css/components/status-bar.css";
 @import "../css/components/nav-bar.css";
@@ -8,6 +10,10 @@
 
 /* Screens */
 @import "../css/screens/login.css";
+@import "../css/screens/friends.css";
+@import "../css/screens/chats.css";
+@import "../css/screens/find.css";
+@import "../css/screens/more.css";
 
 * {
     box-sizing: border-box!important;
@@ -17,7 +23,7 @@ a {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 1000vh;
 
     display: flex;
