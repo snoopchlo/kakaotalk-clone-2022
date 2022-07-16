@@ -5,6 +5,26 @@
     background-color: rgba(224, 227, 229, 0.381);
     border-top: 1px solid rgba(206, 206, 206, 0.3);
     padding: 3rem var(--section-padding);
+    background: rgb(237,231,190);
+/* background: radial-gradient(circle, rgba(237,231,190,1) 0%, rgba(200,218,234,1) 28%, rgba(245,219,228,1) 51%, rgba(230,181,203,1) 74%, rgba(204,181,244,1) 100%);
+background-image: linear-gradient(
+  45deg,
+  hsl(52deg 57% 84%) 0%,
+  hsl(137deg 44% 85%) 18%,
+  hsl(183deg 47% 82%) 26%,
+  hsl(208deg 45% 85%) 33%,
+  hsl(235deg 38% 89%) 39%,
+  hsl(291deg 30% 89%) 44%,
+  hsl(339deg 57% 91%) 50%,
+  hsl(337deg 54% 88%) 56%,
+  hsl(335deg 52% 84%) 61%,
+  hsl(333deg 49% 81%) 67%,
+  hsl(316deg 47% 80%) 74%,
+  hsl(288deg 49% 80%) 82%,
+  hsl(262deg 74% 83%) 100%
+); */
+background: rgba(154, 208, 246, 0.567);
+
 }
 
 .nav__list {
