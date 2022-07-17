@@ -1,0 +1,133 @@
+
+.friends-screen__channel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adventure-time-cover {
+    background-image: url("../../images/adventure-time-cover.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+.friends-list {
+    padding-bottom: 6.3rem;
+}
+.finn-profile {
+    background-image: url("../../images/profile/finn-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+
+.jake-profile {
+    background-image: url("../../images/profile/jake-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+
+.bmo-profile {
+    background-image: url("../../images/profile/bmo-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+
+.bubblegum-profile {
+    background-image: url("../../images/profile/bubblegum-profile.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+
+.flame-princess-profile {
+    background-image: url("../../images/profile/flame-princess-profile.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+
+.marceline-profile {
+    background-image: url("../../images/profile/marceline-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;    
+}
+
+.ice-king-profile {
+    background-image: url("../../images/profile/ice-king-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;    
+}
+
+.lsp-profile {
+    background-image: url("../../images/profile/lsp-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem; 
+}
+
+.lady-rainicorn-profile {
+    background-image: url("../../images/profile/lady-rainicorn.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem; 
+}
+
+.gunter-profile {
+    background-image: url("../../images/profile/gunter-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;  
+}
+
+.lemongrab-profile {
+    background-image: url("../../images/profile/lemongrab-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;  
+}
+
+.peppermint-butler-profile {
+    background-image: url("../../images/profile/peppermint-butler-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;  
+}
+
+.prismo-profile {
+    background-image: url("../../images/profile/prismo-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;  
+}
+
+.abracadaniel-profile {
+    background-image: url("../../images/profile/abracadaniel-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;  
+}
+
+.tree-trunks-profile {
+    background-image: url("../../images/profile/tree-trunks-profile.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;   
+}
+
+.snail-profile {
+    background-image: url("../../images/profile/snail-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;   
+}
+
+.card {
+    border: none;
+
+}
+
+

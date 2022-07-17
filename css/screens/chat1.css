@@ -30,7 +30,8 @@
 .chat-main-container {
     width: 100%;
     background: rgb(229, 237, 243);
-    top: -2rem;
+    top: -6rem;
+    padding-top: 10px!important;
     padding-bottom: 10rem;
     position: relative;
     background: radial-gradient(circle, rgba(237,231,190,1) 0%, rgba(200,218,234,1) 28%, rgba(245,219,228,1) 51%, rgba(230,181,203,1) 74%, rgba(204,181,244,1) 100%);
@@ -54,7 +55,7 @@
 /* Chat time-stamp on the top */
 
 .chat-time-stamp {
-    margin-top: 4rem;
+    margin-top: 8rem;
     width: 100%;
     display: flex;
     justify-content: center;

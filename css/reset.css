@@ -50,5 +50,14 @@ input:focus {
 
 a {
 	color: inherit;
-	text-decoration: none;
+	text-decoration: none!important;
+}
+
+.accordion,
+.card,
+.card-body,
+.collapse {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }

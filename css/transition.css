@@ -14,7 +14,7 @@ html.is-leaving .transition-fade {
  
 }
 /* Transition swipe */
-/* .transition-swipe {
+.transition-swipe {
     opacity: 1;
     transition: 500ms;
     transform: translateX(0);
@@ -27,7 +27,7 @@ html.is-animating .transition-swipe {
 }
 
 html.is-leaving .transition-swipe {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(0);
-} */
+}
 

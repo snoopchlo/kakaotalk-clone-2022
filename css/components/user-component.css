@@ -1,10 +1,18 @@
 .user-component {
     width: 100%;
     display: grid;
-    grid-template-columns: auto 2fr 1fr;
+    grid-template-columns: 0.5fr 5fr 1fr;
     
     padding: 1.4rem 0 1.5rem 0;
     align-items: center;
+}
+.user-component--wide {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+
 }
 
 .user-component__avatar {
@@ -15,21 +23,37 @@
 }
 
 .user-component__avatar--xl {
+    grid-column: 1/2;
+    background: aqua;
+    border-radius: 1rem;
+    margin-right: 1rem;
     width: 5.5rem;
     aspect-ratio: 1/1;
 
 }
 .user-component__avatar--sm {
+    grid-column: 1/2;
+    background: aqua;
+    border-radius: 1rem;
+    margin-right: 1rem;
     width: 4rem;
     aspect-ratio: 1/1;
     border-radius: 1.2rem;
 }
 .user-component__avatar--xs {
+    grid-column: 1/2;
+    background: aqua;
+    border-radius: 1rem;
+    margin-right: 1rem;
     min-width: 3.8rem;
     aspect-ratio: 1/1;
     border-radius: 1.5rem;
 }
 .user-component__avatar--md {
+    grid-column: 1/2;
+    background: aqua;
+    border-radius: 1rem;
+    margin-right: 1rem;
     width: 5rem;
     aspect-ratio: 1/1;
     border-radius: 1.5rem;
@@ -104,4 +128,6 @@
 .user-component__icon i{
     margin-left: 1rem;
 }
+
+
 

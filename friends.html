@@ -7,6 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
         <script src="./main.js" type="module" defer></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>   
         <link rel="stylesheet" href="./css/style.css">
         <title>Welcome to AdventureTalk</title>
     </head>
@@ -58,159 +62,229 @@
                 <!------- Main contents ------->
                 <secion class="friends-main-container">
                     <!-- User profile -->
-                    <header class="user-component main-border-bottom">
-                        <div class="user-component__avatar user-component__avatar--xl"></div>
+                    <header class="user-component--wide main-border-bottom">
+                        <div class="finn-profile user-component__avatar--xl"></div>
                         <div class="user-component__text">
-                            <h2 class="user-component__text__title">Chloe</h2>
-                            <h6 class="user-component__text__sub-title">text etxt etextete</h6>
+                            <h2 class="user-component__text__title">Finn</h2>
+                            <h6 class="user-component__text__sub-title">Adventure Time ⚔️</h6>
                         </div>
                     </header>
                     <!-- Channel -->
-                    <div class="friends-screen__channel main-border-bottom">
-                        <div class="friends-screen__channel-header">
-                            <span>Channel</span>
-                            <i class="fa-regular fa-chevron-up"></i>
+                    <!--Accordion wrapper-->
+                    <div class="accordion" id="channel-accordion">
+                        <!-- Accordion card -->
+                        <div class="accordion-item">
+                            <div class="friends-screen__channel main-border-bottom">
+                            <a class="accordion-toggle" id="channel-accordion__heading" data-toggle="collapse" data-parent="#accordion" href="#channel-accordion__collapse">        
+                                <div class="friends-screen__channel-header" type="button" data-bs-target="#channel-accordion__collapse" aria-expanded="true" aria-controls="channel-accordion__collapse">
+                                    <span>Channel</span>
+                                    <i class="fa-regular fa-chevron-up"></i>
+                                </div>
+                            </a>
+                             <!-- Card body -->
+                            <div id="channel-accordion__collapse" class="accordion-collapse collapse show" aria-labelledby="channel-accordion__heading">
+                                <div class="user-component">
+                                    <div class="adventure-time-cover user-component__avatar--sm"></div> 
+                                    <div class="user-component__text user-component__text--small">
+                                        <h2 class="user-component__text__title--small">Channel</h2>
+                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                                    </div>
+                                    <div class="user-component__icon">
+                                        <span>2</span>
+                                        <i class="fa-regular fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="user-component">
-                            <div class="user-component__avatar user-component__avatar--sm"></div>
-                            <div class="user-component__text user-component__text--small">
-                                <h2 class="user-component__text__title--small">Channel</h2>
-                                <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
+                    </div>        
+                    <!--Accordion wrapper-->
+                    <div class="accordion" id="friends-accordion">
+                        <!-- Accordion card -->
+                        <div class="accordion-item">
+                            <!------- Friends list ------->
+                            <!-- Accordion header -->
+                            <a class="accordion-toggle" id="friends-accordion__heading" data-toggle="collapse" data-parent="#accordion" href="#friends-accordion__collapse">        
+                                <div class="friends-screen__channel-header" type="button" data-bs-target="#friends-accordion__collapse" aria-expanded="true" aria-controls="friends-accordion__collapse">
+                                    <span>Friends 14</span>
+                                    <i class="fa-regular fa-chevron-up rotate-icon accordion-button"></i>
+                                </div>
+                            </a>
+                            <!-- Card body -->
+                            <div id="friends-accordion__collapse" class="accordion-collapse collapse show" aria-labelledby="friends-accordion__heading">
+                                
+                                <ul class="friends-list accordion-body">
+                                    <!-- Friend 1 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="jake-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Jake</h2>
+                                                    <h6 class="user-component__text__sub-title">Homies help homies</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 2 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component">
+                                                <div class="bmo-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">BMO</h2>
+                                                    <h6 class="user-component__text__sub-title">Who wants to play video games? 🎮</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 3 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component">
+                                                <div class="bubblegum-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Princess Bubblegum</h2>
+                                                    <h6 class="user-component__text__sub-title">Science is everything</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 4 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component">
+                                                <div class="flame-princess-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Flame Princess</h2>
+                                                    <h6 class="user-component__text__sub-title">🔥</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 5 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component">
+                                                <div class="marceline-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Marceline</h2>
+                                                    <h6 class="user-component__text__sub-title">🤟👅🩸🎸</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 6 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component">
+                                                <div class="ice-king-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Ice King</h2>
+                                                    <h6 class="user-component__text__sub-title">Princess...</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 7 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="lsp-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">LSP</h2>
+                                                    <h6 class="user-component__text__sub-title">Everybody get ready to pay attention to me! 💋</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 8 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="lady-rainicorn-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Lady Rainicorn</h2>
+                                                    <h6 class="user-component__text__sub-title">가족❤️</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 9 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="gunter-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Gunter</h2>
+                                                    <h6 class="user-component__text__sub-title">WENK</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 10 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="lemongrab-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Lemongrab</h2>
+                                                    <h6 class="user-component__text__sub-title">UNACCEPTABLE!!!!</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 11 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="peppermint-butler-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Peppermint Butler</h2>
+                                                    <h6 class="user-component__text__sub-title">Magic... </h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 12 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="prismo-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Prismo</h2>
+                                                    <h6 class="user-component__text__sub-title">What's up?</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 13 -->
+                                    <li class="friends-list__friend sub-border-bottom">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="abracadaniel-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Abracadaniel</h2>
+                                                    <h6 class="user-component__text__sub-title">I'm a true wizard!!! 🌈</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Friend 14 -->
+                                    <li class="friends-list__friend">
+                                        <a href="#">
+                                            <div class="user-component--wide">
+                                                <div class="snail-profile user-component__avatar--sm"></div>
+                                                <div class="user-component__text user-component__text--small">
+                                                    <h2 class="user-component__text__title--small">Snail</h2>
+                                                    <h6 class="user-component__text__sub-title">.</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="user-component__icon">
-                                <span>2</span>
-                                <i class="fa-regular fa-chevron-right"></i>
-                            </div>
-                
                         </div>
                     </div>
-                    <!-- Friends list -->
-                    <div class="friends-screen__channel-header">
-                        <span>Friends</span>
-                        <i class="fa-regular fa-chevron-up"></i>
-                    </div>
-                    <ul class="friends-list">
-                        <!-- Friend 1 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 2 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 3 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 4 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 5 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 6 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 7 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 8 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 9 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- Friend 10 -->
-                        <li class="friends-list__friend">
-                            <a href="#">
-                                <div class="user-component">
-                                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                                    <div class="user-component__text user-component__text--small">
-                                        <h2 class="user-component__text__title--small">Channel</h2>
-                                        <!-- <h6 class="user-component__text__sub-title">text etxt etextete</h6> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
                 </secion>
             </article>   
         </main>
@@ -225,18 +299,18 @@
                 <li class="nav__btn nav__btn2">
                     <a class="nav__link nav__link__chat" href="/chats.html">
                         <span class="nav__notification badge">1</span>
-                        <i class="fa-regular fa-comment fa-2x"></i>
+                        <i class="fa-solid fa-comment fa-2x"></i>
                     </a>
                 </li>
                 <li class="nav__btn nav__btn3">
                     <a class="nav__link" href="/find.html">
-                        <i class="fa-regular fa-magnifying-glass fa-2x"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                     </a>
                 </li>
                 <li class="nav__btn nav__btn4">
                     <a class="nav__link" href="/more.html">
                         <span class="badge__dot"></span>
-                        <i class="fa-regular fa-ellipsis-stroke fa-2x"></i>
+                        <i class="fa-solid fa-ellipsis-stroke fa-2x"></i>
                     </a>
                 </li>
             </ul>
@@ -248,7 +322,7 @@
         <div id="no-landscape">
             <span>Please rotate your screen</span>
         </div>
-        
+       
         <!-- Fontawesome icons -->
         <script src="https://kit.fontawesome.com/fc3b13091a.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

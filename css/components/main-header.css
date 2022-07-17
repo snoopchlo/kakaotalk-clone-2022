@@ -7,18 +7,22 @@
 
     display: grid;
     /* 4 icons on the right */
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1.7fr;
     align-items: center;
     background: var(--light-blue);
     font-family: var(--nunito);
     font-weight: 800;
     letter-spacing: 0.15rem;
     z-index: 90;
+    color: rgb(4, 22, 36);
     
+}
+.main-header ul li a i {
+    font-size: 1.5rem;
 }
 /* 3 icons on the right */
 .main-header--narrow {
-    grid-template-columns: 1fr 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 /* Title on the left */
 .main-header__title {
