@@ -8,8 +8,3 @@ var swup = new Swup({
 
 
 
-// Rotate icon - Bootstrap
-let rotateBtn = document.getElementsByClassName("rotate-icon")
-$("#myButton").click(function(e) {
-    $(this).addClass("rotate-animation");
-});
