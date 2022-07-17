@@ -11,6 +11,7 @@
     color: white;
     font-family: var(--inter);
     font-size: 0.9rem;
+    z-index: 100;
 }
 
 .status-bar__column--left {

@@ -11,6 +11,7 @@
 @import "../css/components/nav-bar.css";
 @import "../css/components/main-header.css";
 @import "../css/components/user-component.css";
+@import "../css/components/no-mobile.css";
 
 /* Screens */
 @import "../css/screens/login.css";
@@ -48,13 +49,16 @@ body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-.z900 {
+/* .z900 {
     z-index: 900;
 }
 .z800 {
     z-index: 800;
+} */
+
+/* Prevent test flowing out of div,span */
+div,
+span {
+    word-wrap: break-word;
 }
-
-
-
 

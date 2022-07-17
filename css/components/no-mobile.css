@@ -1,0 +1,43 @@
+#no-mobile,
+#no-landscape {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 900;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(237,231,190,1) 0%, rgba(200,218,234,1) 28%, rgba(245,219,228,1) 51%, rgba(230,181,203,1) 74%, rgba(204,181,244,1) 100%);
+    background-image: linear-gradient(
+    45deg,
+    hsl(52deg 57% 84%) 0%,
+    hsl(137deg 44% 85%) 18%,
+    hsl(183deg 47% 82%) 26%,
+    hsl(208deg 45% 85%) 33%,
+    hsl(235deg 38% 89%) 39%,
+    hsl(291deg 30% 89%) 44%,
+    hsl(339deg 57% 91%) 50%,
+    hsl(337deg 54% 88%) 56%,
+    hsl(335deg 52% 84%) 61%,
+    hsl(333deg 49% 81%) 67%,
+    hsl(316deg 47% 80%) 74%,
+    hsl(288deg 49% 80%) 82%,
+    hsl(262deg 74% 83%) 100%);
+    background-color: antiquewhite;
+}
+
+
+
+@media screen and (max-width: 645px) {
+    #no-mobile {
+        display: none;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    #no-landscape {
+        display: none;
+    }
+}
