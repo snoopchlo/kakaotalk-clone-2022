@@ -12,7 +12,7 @@
 @import "../css/components/main-header.css";
 @import "../css/components/user-component.css";
 @import "../css/components/no-mobile.css";
-@import "./transition.css";
+/* @import "./transition.css"; */
 
 /* Screens */
 @import "../css/screens/login.css";

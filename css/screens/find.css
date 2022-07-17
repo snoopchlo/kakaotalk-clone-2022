@@ -48,3 +48,41 @@
     margin-left: auto;
 }
 
+.fern-profile {
+    background-image: url("../../images/profile/fern-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+.magicman-profile {
+    background-image: url("../../images/profile/magicman-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+.slime-princess-profile {
+    background-image: url("../../images/profile/slime-princess-profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.5rem;
+}
+
+.candy-kingdom-cover {
+    background-image: url("../../images/candy-kingsom-cover.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.iceking-and-gunter {
+    background-image: url("../../images/iceking-and-gunter.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.marceline-band-cover {
+    background-image: url("../../images/marceline-band-cover.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.open-chat {
+    padding-bottom: 6rem;
+}
