@@ -6,6 +6,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+        <script src="./main.js" type="module" defer></script>
         <link rel="stylesheet" href="./css/style.css">
         <title>Welcome to AdventureTalk</title>
     </head>
@@ -25,137 +27,142 @@
                 <span class="status-bar__column--right__bolt-icon"><i class="fa-solid fa-bolt fa-xs"></i></span>
             </div>
         </section>
+        <!-- Transition -->
+        <main id="swup" class="transition-fade">
+           
+                    <!------- Header ------->
+            <header class="main-header main-header--narrow">
+                <h1 class="main-header__title">Find</h1>
+                <ul class="main-header__icons">
+                    <li>
+                        <a href="find.html">
+                            <i class="fa-regular fa-magnifying-glass fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="music.html">
+                            <i class="fa-regular fa-music fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-regular fa-gear fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+        
+            </header>
+                <!------- Main contents ------->
+                <section class="find-main-container main-container">
+                    <!-- First row icons -->
+                    <article class="main-border-bottom find-icons">
+                        <div class="find-icons__icon">
+                            <i class="fa-regular fa-qrcode fa-2x"></i>
+                            <span>QR Code</span>
+                        </div>
+                        <div class="find-icons__icon">
+                            <i class="fa-regular fa-address-book fa-2x"></i>
+                            <span>Add by Contacts</span>
+                        </div>
+                        <div class="find-icons__icon">
+                            <i class="fa-regular fa-user-plus fa-2x"></i>
+                            <span>Add by ID</span>
+                        </div>
+                        <div class="find-icons__icon">
+                            <i class="fa-regular fa-envelope fa-2x"></i>
+                            <span>Invite</span>
+                        </div>
+                    </article>
+                    <!-- Recommended Friends -->
+                    <article class="main-border-bottom recommended-friends">
+                        <header class="recommended-friends-header">
+                            <h1 class="user-component__text__sub-title--small">Recommended Friends</h1>
+                        </header>
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text">
+                                <h2 class="user-component__text__title--medium">Chloe</h2>
+                                <h6 class="user-component__text__sub-title">text etxt etextete</h6>
+                            </div>
+                            <div class="user-component__notification">
+                                <i class="fa-solid fa-circle-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text">
+                                <h2 class="user-component__text__title--medium">Chloe</h2>
+                                <h6 class="user-component__text__sub-title">text etxt etextete</h6>
+                            </div>
+                            <div class="user-component__notification">
+                                <i class="fa-solid fa-circle-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="user-component">
+                            <div class="user-component__avatar user-component__avatar--sm"></div>
+                            <div class="user-component__text">
+                                <h2 class="user-component__text__title--medium">Chloe</h2>
+                                <h6 class="user-component__text__sub-title">text etxt etextete</h6>
+                            </div>
+                            <div class="user-component__notification">
+                                <i class="fa-solid fa-circle-plus fa-2x"></i>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Openchat -->
+                    <article class="open-chat">
+                        <header class="open-chat-header">
+                            <h1 class="user-component__text__sub-title--small">Open Chat</h1>
+                        </header>
+                        <!-- Openchat 1 -->
+                        <div class="open-chat__chat user-component">
+                            <div class="open-chat__chat__text">
+                                <h2 class="user-component__text__title">Nomadcoder</h2>
+                                <h6 class="user-component__text__sub-title">#text etxt etextete</h6>
+                                <div class="open-chat__chat__data">
+                                    <span class="open-chat__chat__data__avatar"></span>
+                                    <span class="open-chat__chat__data__number">802 members</span>
+                                    <span>|</span>
+                                    <span class="open-chat__chat__data__status">Active</span>
+                                </div>
+                            </div>
+                            <div class="open-chat__chat__avatar user-component__avatar user-component__avatar--xl"></div>
+                        </div>
+                        <!-- Openchat2 -->
+                        <div class="open-chat__chat user-component">
+                            <div class="open-chat__chat__text">
+                                <h2 class="user-component__text__title">Nomadcoder</h2>
+                                <h6 class="user-component__text__sub-title">#text etxt etextete</h6>
+                                <div class="open-chat__chat__data">
+                                    <span class="open-chat__chat__data__avatar"></span>
+                                    <span class="open-chat__chat__data__number">802 members</span>
+                                    <span>|</span>
+                                    <span class="open-chat__chat__data__status">Active</span>
+                                </div>
+                            </div>
+                            <div class="open-chat__chat__avatar user-component__avatar user-component__avatar--xl"></div>
+                        </div>
+                        <!-- Openchat 3 -->
+                        <div class="open-chat__chat user-component">
+                            <div class="open-chat__chat__text">
+                                <h2 class="user-component__text__title">Nomadcoder</h2>
+                                <h6 class="user-component__text__sub-title">#text etxt etextete</h6>
+                                <div class="open-chat__chat__data">
+                                    <span class="open-chat__chat__data__avatar"></span>
+                                    <span class="open-chat__chat__data__number">802 members</span>
+                                    <span>|</span>
+                                    <span class="open-chat__chat__data__status">Active</span>
+                                </div>
+                            </div>
+                            <div class="open-chat__chat__avatar user-component__avatar user-component__avatar--xl"></div>
+                        </div>
 
-        <!------- Header ------->
-        <header class="main-header main-header--narrow">
-            <h1 class="main-header__title">Find</h1>
-            <ul class="main-header__icons">
-                <li>
-                    <a href="find.html">
-                        <i class="fa-regular fa-magnifying-glass fa-lg"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="music.html">
-                        <i class="fa-regular fa-music fa-lg"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="settings.html">
-                        <i class="fa-regular fa-gear fa-lg"></i>
-                    </a>
-                </li>
-            </ul>
-       
-        </header>
-        <!------- Main contents ------->
-        <section class="find-main-container main-container">
-            <!-- First row icons -->
-            <article class="main-border-bottom find-icons">
-                <div class="find-icons__icon">
-                    <i class="fa-regular fa-qrcode fa-2x"></i>
-                    <span>QR Code</span>
-                </div>
-                <div class="find-icons__icon">
-                    <i class="fa-regular fa-address-book fa-2x"></i>
-                    <span>Add by Contacts</span>
-                </div>
-                <div class="find-icons__icon">
-                    <i class="fa-regular fa-user-plus fa-2x"></i>
-                    <span>Add by ID</span>
-                </div>
-                <div class="find-icons__icon">
-                    <i class="fa-regular fa-envelope fa-2x"></i>
-                    <span>Invite</span>
-                </div>
-            </article>
-            <!-- Recommended Friends -->
-            <article class="main-border-bottom recommended-friends">
-                <header class="recommended-friends-header">
-                    <h1 class="user-component__text__sub-title--small">Recommended Friends</h1>
-                </header>
-                <div class="user-component">
-                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                    <div class="user-component__text">
-                        <h2 class="user-component__text__title--medium">Chloe</h2>
-                        <h6 class="user-component__text__sub-title">text etxt etextete</h6>
-                    </div>
-                    <div class="user-component__notification">
-                        <i class="fa-solid fa-circle-plus fa-2x"></i>
-                    </div>
-                </div>
-                <div class="user-component">
-                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                    <div class="user-component__text">
-                        <h2 class="user-component__text__title--medium">Chloe</h2>
-                        <h6 class="user-component__text__sub-title">text etxt etextete</h6>
-                    </div>
-                    <div class="user-component__notification">
-                        <i class="fa-solid fa-circle-plus fa-2x"></i>
-                    </div>
-                </div>
-                <div class="user-component">
-                    <div class="user-component__avatar user-component__avatar--sm"></div>
-                    <div class="user-component__text">
-                        <h2 class="user-component__text__title--medium">Chloe</h2>
-                        <h6 class="user-component__text__sub-title">text etxt etextete</h6>
-                    </div>
-                    <div class="user-component__notification">
-                        <i class="fa-solid fa-circle-plus fa-2x"></i>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Openchat -->
-            <article class="open-chat">
-                <header class="open-chat-header">
-                    <h1 class="user-component__text__sub-title--small">Open Chat</h1>
-                </header>
-                <!-- Openchat 1 -->
-                <div class="open-chat__chat user-component">
-                    <div class="open-chat__chat__text">
-                        <h2 class="user-component__text__title">Nomadcoder</h2>
-                        <h6 class="user-component__text__sub-title">#text etxt etextete</h6>
-                        <div class="open-chat__chat__data">
-                            <span class="open-chat__chat__data__avatar"></span>
-                            <span class="open-chat__chat__data__number">802 members</span>
-                            <span>|</span>
-                            <span class="open-chat__chat__data__status">Active</span>
-                        </div>
-                    </div>
-                    <div class="open-chat__chat__avatar user-component__avatar user-component__avatar--xl"></div>
-                </div>
-                <!-- Openchat2 -->
-                <div class="open-chat__chat user-component">
-                    <div class="open-chat__chat__text">
-                        <h2 class="user-component__text__title">Nomadcoder</h2>
-                        <h6 class="user-component__text__sub-title">#text etxt etextete</h6>
-                        <div class="open-chat__chat__data">
-                            <span class="open-chat__chat__data__avatar"></span>
-                            <span class="open-chat__chat__data__number">802 members</span>
-                            <span>|</span>
-                            <span class="open-chat__chat__data__status">Active</span>
-                        </div>
-                    </div>
-                    <div class="open-chat__chat__avatar user-component__avatar user-component__avatar--xl"></div>
-                </div>
-                <!-- Openchat 3 -->
-                <div class="open-chat__chat user-component">
-                    <div class="open-chat__chat__text">
-                        <h2 class="user-component__text__title">Nomadcoder</h2>
-                        <h6 class="user-component__text__sub-title">#text etxt etextete</h6>
-                        <div class="open-chat__chat__data">
-                            <span class="open-chat__chat__data__avatar"></span>
-                            <span class="open-chat__chat__data__number">802 members</span>
-                            <span>|</span>
-                            <span class="open-chat__chat__data__status">Active</span>
-                        </div>
-                    </div>
-                    <div class="open-chat__chat__avatar user-component__avatar user-component__avatar--xl"></div>
-                </div>
-
-            </article>
-        </section>
+                    </article>
+                </section>
+          
+        </main>
+        
        
 
 
@@ -163,24 +170,24 @@
         <nav class="nav z900">
            <ul class="nav__list">
               <li class="nav__btn nav__btn1">
-                <a class="nav__link" href="friends.html">
+                <a class="nav__link" href="/friends.html">
                     
                     <i class="fa-regular fa-user-large fa-2x"></i>
                 </a>
               </li>
               <li class="nav__btn nav__btn2">
-                <a class="nav__link nav__link__chat" href="chats.html">
+                <a class="nav__link nav__link__chat" href="/chats.html">
                     <span class="nav__notification badge">1</span>
                     <i class="fa-regular fa-comment fa-2x"></i>
                 </a>
               </li>
               <li class="nav__btn nav__btn3">
-                <a class="nav__link" href="find.html">
+                <a class="nav__link" href="/find.html">
                     <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                 </a>
               </li>
               <li class="nav__btn nav__btn4">
-                <a class="nav__link" href="more.html">
+                <a class="nav__link" href="/more.html">
                     <span class="badge__dot"></span>
                     <i class="fa-regular fa-ellipsis-stroke fa-2x"></i>
                 </a>
@@ -189,6 +196,5 @@
         </nav>
         
         <script src="https://kit.fontawesome.com/fc3b13091a.js" crossorigin="anonymous"></script>
-        <script src="./js/index.js"></script>
     </body>
 </html>

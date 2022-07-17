@@ -1,5 +1,7 @@
 .main-header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 3.8rem 2rem var(--section-padding);
 

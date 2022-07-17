@@ -12,6 +12,7 @@
 @import "../css/components/main-header.css";
 @import "../css/components/user-component.css";
 @import "../css/components/no-mobile.css";
+@import "./transition.css";
 
 /* Screens */
 @import "../css/screens/login.css";
@@ -61,4 +62,10 @@ div,
 span {
     word-wrap: break-word;
 }
+
+main, article {
+    width: 100%;
+
+}
+
 

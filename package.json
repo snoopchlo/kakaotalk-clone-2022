@@ -1,6 +1,7 @@
 {
   "name": "kakaotalk-clone-2022",
   "version": "1.0.0",
+  "type": "module",
   "description": "kakaotalk clone coding",
   "main": "index.js",
   "scripts": {
@@ -17,7 +18,6 @@
   },
   "homepage": "https://github.com/snoopchlo/kakaotalk-clone-2022#readme",
   "dependencies": {
-    "@dogstudio/highway": "^2.2.1",
-    "gsap": "^3.10.4"
+    "swup": "^2.0.16"
   }
 }
