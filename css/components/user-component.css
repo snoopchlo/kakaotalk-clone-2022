@@ -24,7 +24,11 @@
     aspect-ratio: 1/1;
     border-radius: 1.2rem;
 }
-
+.user-component__avatar--xs {
+    width: 3.8rem;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+}
 .user-component__avatar--md {
     width: 5rem;
     aspect-ratio: 1/1;
@@ -43,6 +47,12 @@
 }
 .user-component__text__title--small {
     font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.user-component__text__title--xs {
+    font-size: 1rem;
+    color: grey;
     font-weight: 400;
 }
 .user-component__text__title--medium {

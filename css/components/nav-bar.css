@@ -6,6 +6,7 @@
     border-top: 1px solid rgba(206, 206, 206, 0.3);
     padding: 2rem var(--section-padding);
     background: rgb(237,231,190);
+    z-index: 900;
 /* background: radial-gradient(circle, rgba(237,231,190,1) 0%, rgba(200,218,234,1) 28%, rgba(245,219,228,1) 51%, rgba(230,181,203,1) 74%, rgba(204,181,244,1) 100%);
 background-image: linear-gradient(
   45deg,

@@ -1,5 +1,5 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Nunito:ital,wght@wght@200;400;500;600;700;800;900&display=swap');
+
+
 
 /* Reset */
 @import "../css/reset.css";
@@ -11,7 +11,6 @@
 @import "../css/components/nav-bar.css";
 @import "../css/components/main-header.css";
 @import "../css/components/user-component.css";
-@import "../css/components/sub-header.css";
 
 /* Screens */
 @import "../css/screens/login.css";
@@ -20,6 +19,7 @@
 @import "../css/screens/find.css";
 @import "../css/screens/more.css";
 @import "../css/screens/settings.css";
+@import "../css/screens/chat1.css";
 
 * {
     box-sizing: border-box!important;
